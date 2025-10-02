@@ -61,7 +61,7 @@ public class Cliente {
         return compras;
     }
 
-    /* Metódo para adicionar a compra do cliente */
+    /* Metodo para adicionar a compra do cliente */
 
     public void adicionarCompra(Compra compra) {
         compras.add(compra);

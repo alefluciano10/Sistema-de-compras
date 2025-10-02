@@ -40,7 +40,7 @@ public class CartaoDeCredito {
         }
     }
 
-    /* Metódo para mostar o cartão */
+    /* Metodo para mostar o cartão */
 
     public void exibirCartãoDeCredito() {
         System.out.println("=== Cartão de Credito ===");
