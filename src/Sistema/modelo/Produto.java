@@ -4,13 +4,13 @@ package Sistema.modelo;
 
 public class Produto {
     private String nome;
-    private int preco;
+    private double preco;
     private int quantidade;
     private String categoria;
 
     /* Construtor da classe */
 
-    public Produto(String nome, int preco, int quantidade,  String categoria) {
+    public Produto(String nome, double preco, int quantidade,  String categoria) {
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
@@ -23,7 +23,7 @@ public class Produto {
         return nome;
     }
 
-    public int getPreco() {
+    public double getPreco() {
         return preco;
     }
 
@@ -35,9 +35,13 @@ public class Produto {
         return categoria;
     }
 
+    /* Setter */
+
+    public void setQuantidade(int quantidade) { this.quantidade = quantidade; }
+
     /* Metodo para reduz o estoque */
 
-    public boolean reduizEstoque(int qtd) {
+    public boolean reduzirEstoque(int qtd) {
         if (qtd <= quantidade) {
             quantidade -= qtd;
             return true;

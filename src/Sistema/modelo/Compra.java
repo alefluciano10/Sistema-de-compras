@@ -5,7 +5,7 @@ package Sistema.modelo;
 public class Compra {
     private Produto produto;
     private int quantidade;
-    private int valorTotal;
+    private double valorTotal;
 
     /* Construtor */
 
@@ -25,7 +25,7 @@ public class Compra {
         return quantidade;
     }
 
-    public int getValorTotal() {
+    public double getValorTotal() {
         return valorTotal;
     }
 

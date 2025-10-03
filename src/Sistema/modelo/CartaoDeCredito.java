@@ -3,13 +3,13 @@ package Sistema.modelo;
 /* Criação da classe CartãoDeCredito */
 
 public class CartaoDeCredito {
-    private int numero;
+    private String numero;
     private double limite;
     private double saldo;
 
     /* Construtor da classe */
 
-    public CartaoDeCredito(int numero, double limite, double saldo) {
+    public CartaoDeCredito(String numero, double limite) {
         this.numero = numero;
         this.limite = limite;
         this.saldo = limite;
@@ -17,7 +17,7 @@ public class CartaoDeCredito {
 
     /* Getter */
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
@@ -42,8 +42,8 @@ public class CartaoDeCredito {
 
     /* Metodo para mostar o cartão */
 
-    public void exibirCartãoDeCredito() {
-        System.out.println("=== Cartão de Credito ===");
+    public void exibirCartaoDeCredito() {
+        System.out.println("\n=== Cartão de Credito ===");
         System.out.println("Cartão: " + numero + " | Limite: " + limite + " | Saldo: " + saldo);
     }
 }
